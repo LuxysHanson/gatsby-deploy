@@ -22,7 +22,7 @@ const Screen = () => (
                 </ReactWOW>
             </div>
             <div className="mbr-arrow hidden-sm-down" aria-hidden="true">
-                <Link to="about" spy={true} smooth={true} duration={600}>
+                <Link to="next" spy={true} smooth={true} duration={600}>
                     <i className="mbri-icons mbri-down mbr-iconfont"/>
                 </Link>
             </div>

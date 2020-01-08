@@ -1,6 +1,4 @@
 import $ from "jquery"
-import Isotope from "isotope-layout"
-import jQueryBridget from "jquery-bridget"
 import easyPie from "easy-pie-chart"
 
 export default class Main {
@@ -35,6 +33,9 @@ export default class Main {
     }
 
     portfolioFilter() {
+        const jQueryBridget = require("jquery-bridget");
+        const Isotope = require("isotope-layout");
+
         // Portfolio isotope filter
         jQueryBridget( 'isotope', Isotope, $ );
         let container = $('.portfolio-lists');
@@ -63,13 +64,16 @@ export default class Main {
     }
 
     skillsChart() {
+        const jQueryBridget = require("jquery-bridget");
+        const Isotope = require("isotope-layout");
+
         // skills chart
         $(document).ready(function (e) {
             var index = 0;
             $(document).scroll(function () {
                 var top = $('#skills').height() - $(window).scrollTop();
                 if (top < -1000) {
-                    if (index == 0) {
+                    if (index === 0) {
 
                         jQueryBridget('easyPieChart', easyPie, $);
                         $('.chart').easyPieChart({

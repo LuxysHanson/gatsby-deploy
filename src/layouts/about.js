@@ -26,8 +26,8 @@ const About = () => {
   `)
 
     return (
-        <section key={data.wordPress.pageBy.pageId} id="about" className="about pd-section">
-            <div className="container">
+        <section key={data.wordPress.pageBy.pageId} id="next" className="about pd-section">
+            <div id="about" className="container">
                 <h3 id="fixed-top" className="title">{data.wordPress.pageBy.title}</h3>
                 <div className="about-body">
                     <div className="about-img">
