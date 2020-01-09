@@ -33,7 +33,7 @@ module.exports = {
             options: {
                 typeName: `WPGraphQL`,
                 fieldName: `wordPress`,
-                url: `http://gatsby.loc/graphql`
+                url: `http://portfolio.is-best.net/graphql`
             }
         },
         `gatsby-background-image`
